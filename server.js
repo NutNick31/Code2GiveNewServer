@@ -6,6 +6,7 @@ import authRouter from "./routes/authRoutes.js";
 import counsellingRouter from "./routes/counsellingRoutes.js";
 import userLocationRoutes from "./routes/userLocationRoutes.js";
 import mlAlgoRoutes from './routes/mlAlgoRoutes.js'
+import questionAnswerRoutes from './routes/questionAnswerRoutes.js'
 
 dotenv.config();
 
@@ -18,7 +19,8 @@ app.use(express.json());
 app.use("/api/auth", authRouter);
 app.use("/api/counselling", counsellingRouter);
 app.use("/api/location", userLocationRoutes);
-app.use('/api/mlAlgo', mlAlgoRoutes)
+app.use('/api/mlAlgo', mlAlgoRoutes);
+app.use('/api/qna', questionAnswerRoutes);
 
 const port = process.env.PORT || 8000;
 

@@ -99,11 +99,11 @@ def alcohol(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "Does not need a counselor"
+        return "don't not need a counselor"
     elif counselor_condition == yes_condition:
-        return "Needs a counselor"
+        return "need a counselor"
     else:
-        return "Can have a counselor"
+        return "can have a counselor"
 
 
 # internet addiction
@@ -128,11 +128,11 @@ def internet(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "Does not need a counselor"
+        return "don't not need a counselor"
     elif counselor_condition == yes_condition:
-        return "Needs a counselor"
+        return "need a counselor"
     else:
-        return "Can have a counselor"
+        return "can have a counselor"
 
 
 # poronography addiction
@@ -157,11 +157,11 @@ def pornography(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "Does not need a counselor"
+        return "don't not need a counselor"
     elif counselor_condition == yes_condition:
-        return "Needs a counselor"
+        return "need a counselor"
     else:
-        return "Can have a counselor"
+        return "can have a counselor"
 
 
 # gaming addiction
@@ -189,11 +189,11 @@ def gaming(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "Does not need a counselor"
+        return "don't not need a counselor"
     elif counselor_condition == yes_condition:
-        return "Needs a counselor"
+        return "need a counselor"
     else:
-        return "Can have a counselor"
+        return "can have a counselor"
 
 
 # gambling addiction
@@ -220,11 +220,11 @@ def gambling(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "Does not need a counselor"
+        return "don't not need a counselor"
     elif counselor_condition == yes_condition:
-        return "Needs a counselor"
+        return "need a counselor"
     else:
-        return "Can have a counselor"
+        return "can have a counselor"
 
 
 # family issues
@@ -252,11 +252,11 @@ def family(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "Does not need a counselor"
+        return "don't not need a counselor"
     elif counselor_condition == yes_condition:
-        return "Needs a counselor"
+        return "need a counselor"
     else:
-        return "Can have a counselor"
+        return "can have a counselor"
 
 
 # anger issues
@@ -283,11 +283,11 @@ def anger(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "Does not need a counselor"
+        return "don't not need a counselor"
     elif counselor_condition == yes_condition:
-        return "Needs a counselor"
+        return "need a counselor"
     else:
-        return "Can have a counselor"
+        return "can have a counselor"
 
 
 # suicide
@@ -316,11 +316,11 @@ def suicide(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "Does not need a counselor"
+        return "don't not need a counselor"
     elif counselor_condition == yes_condition or f:
-        return "Needs a counselor"
+        return "need a counselor"
     else:
-        return "Can have a counselor"
+        return "can have a counselor"
 
 
 def switch_case(addictionType, user_response):

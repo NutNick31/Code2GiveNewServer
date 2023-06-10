@@ -10,8 +10,8 @@ export const getAllCounselling = async (req, res) => {
 
 export const createCounselling = async (req, res) => {
     try {
-        const {user, name, email, location, college, age} = req.body
-        const counselling = await counsellingModel.create({user, name, email, location, college, age})
+        const {user, name, email, location, college, age, number} = req.body
+        const counselling = await counsellingModel.create({user, name, email, location, college, age, number})
         res.status(200).json({
             success: true,
             message: "Counselling created successfully",
