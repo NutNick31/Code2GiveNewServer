@@ -76,7 +76,7 @@ def predict_counselor_needed(user_response, kmeans_model, scaler_f, scaler_a):
 
 # alcohol addiction
 def alcohol(user_response):
-    dataset_condition1 = pd.read_csv("MlData/content/Alcohol.csv")
+    dataset_condition1 = pd.read_csv("MlData/content/Alcohol.csv",names= ['q1', 'q2', 'q3','q4','q5','q6','q7'])
     (
         kmeans_model_condition1,
         scaler_f_condition1,
@@ -99,7 +99,7 @@ def alcohol(user_response):
 
     # Check if the user needs a counselor based on the cluster
     if counselor_condition == no_condition:
-        return "don't not need a counselor"
+        return "don't need a counselor"
     elif counselor_condition == yes_condition:
         return "need a counselor"
     else:
@@ -108,7 +108,7 @@ def alcohol(user_response):
 
 # internet addiction
 def internet(user_response):
-    dataset_condition2 = pd.read_csv("MlData/content/internet.csv")
+    dataset_condition2 = pd.read_csv("MlData/content/internet.csv",names= ['q1', 'q2', 'q3','q4','q5','q6','q7'])
     (
         kmeans_model_condition2,
         scaler_f_condition2,
@@ -137,7 +137,7 @@ def internet(user_response):
 
 # poronography addiction
 def pornography(user_response):
-    dataset_condition3 = pd.read_csv("MlData/content/pornography.csv")
+    dataset_condition3 = pd.read_csv("MlData/content/pornography.csv",names= ['q1', 'q2', 'q3','q4','q5','q6','q7'])
     (
         kmeans_model_condition3,
         scaler_f_condition3,
